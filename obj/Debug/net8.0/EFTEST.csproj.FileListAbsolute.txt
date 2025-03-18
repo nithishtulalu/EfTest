@@ -170,3 +170,4 @@ C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\r
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.pdb
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.genruntimeconfig.cache
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\ref\EFTEST.dll
+C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.sourcelink.json
