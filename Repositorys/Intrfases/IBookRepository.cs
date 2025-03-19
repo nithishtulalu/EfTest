@@ -4,6 +4,6 @@ namespace EFTEST.Repositorys.Intrfases
 {
     public interface IBookRepository
     {
-        Task insertData(Book books);
+        Task insertDataAsync(Book books);
     }
 }

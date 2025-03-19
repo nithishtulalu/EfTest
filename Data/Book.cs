@@ -1,4 +1,6 @@
-﻿namespace EFTEST.Data
+﻿using System.Text.Json.Serialization;
+
+namespace EFTEST.Data
 {
     public class Book
     {
@@ -12,8 +14,8 @@
         public DateTime CreatedOn { get; set; }
 
         public int LanguageId { get; set; }
-        
-        public Language Language { get; set; }
+        [JsonIgnore]
+        public Language? Language { get; set; }
         
     }
 }

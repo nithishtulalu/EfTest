@@ -22,7 +22,7 @@
   {
     "ContainingType": "EFTEST.Controllers.BooksController",
     "Method": "InsertData",
-    "RelativePath": "api/Books/Insert Data To Books",
+    "RelativePath": "api/Books/InsertDataToBooks",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

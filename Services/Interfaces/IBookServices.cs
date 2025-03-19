@@ -4,6 +4,6 @@ namespace EFTEST.Services.Interfaces
 {
     public interface IBookServices
     {
-        Task insertData(Book books);
+        Task insertDataAsync(Book books);
     }
 }

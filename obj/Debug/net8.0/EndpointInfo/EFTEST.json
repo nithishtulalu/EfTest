@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Books/Insert Data To Books": {
+    "/api/Books/InsertDataToBooks": {
       "post": {
         "tags": [
           "Books"
@@ -375,9 +375,6 @@
           "languageId": {
             "type": "integer",
             "format": "int32"
-          },
-          "language": {
-            "$ref": "#/components/schemas/Language"
           }
         },
         "additionalProperties": false
@@ -423,7 +420,11 @@
             "nullable": true
           },
           "books": {
-            "$ref": "#/components/schemas/Book"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Book"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

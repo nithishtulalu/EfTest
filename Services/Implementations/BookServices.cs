@@ -12,9 +12,9 @@ namespace EFTEST.Services.Implementations
             _bookRepository = bookRepository;
         }
 
-        public async Task insertData(Book books)
+        public async Task insertDataAsync(Book books)
         {
-            await _bookRepository.insertData(books);
+            await _bookRepository.insertDataAsync(books);
         }
     }
 }

@@ -14,15 +14,14 @@ namespace EFTEST.Controllers
         {
             _bookServices = bookServices;
         }
-        [HttpPost]
-        [Route("Insert Data To Books")]
 
+
+        [HttpPost]
+        [Route("InsertDataToBooks")]
         public async Task<ActionResult> InsertData([FromBody] Book books)
         {
-            await _bookServices.insertData(books);
-            return CreatedAtAction(nameof(books), new { id = books.Id }, books);
-            
-
+            await _bookServices.insertDataAsync(books);
+            return CreatedAtAction(nameof(InsertData), new { id = books.Id }, books); 
         }
 
     }
