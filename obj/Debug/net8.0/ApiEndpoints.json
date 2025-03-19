@@ -89,6 +89,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EFTEST.Controllers.BooksController",
+    "Method": "UpdateMultipleDataAsync",
+    "RelativePath": "api/Books/update Multiple   Data",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFTEST.Controllers.BooksController",
+    "Method": "UpdateSingleDataAsync",
+    "RelativePath": "api/Books/update Single  Data",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "book",
+        "Type": "EFTEST.Data.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EFTEST.Controllers.CurencyController",
     "Method": "GetCurrencies",
     "RelativePath": "api/Curency/ALL CUREENCY",

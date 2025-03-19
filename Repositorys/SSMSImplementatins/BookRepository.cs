@@ -56,5 +56,31 @@ namespace EFTEST.Repositorys.SSMSImplementatins
             }
 
         }
+
+        public async Task UpdateSingleDataAsync(int id, Book book)
+        {
+            var book_data = await _dbContext.Books
+                                            .Where(b => b.Id == id)
+                                            .FirstOrDefaultAsync();
+            if (book_data != null)
+            {
+                _dbContext.Books.Update(book_data);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
+        public async Task UpdateMultipleDataAsync(List<int> ids)
+        {
+            var Data_book = await _dbContext.Books
+                                            .Where(b => ids.Contains(b.Id))
+                                            .ToListAsync();
+            if (!Data_book.Any())
+            {
+                _dbContext.Books.UpdateRange(Data_book);
+                await _dbContext.SaveChangesAsync();
+            }
+
+
+        }
     }
 }

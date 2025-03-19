@@ -153,6 +153,7 @@ C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\E
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.csproj.CoreCompileInputs.cache
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.sourcelink.json
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\scopedcss\bundle\EFTEST.styles.css
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\staticwebassets.development.json
@@ -170,4 +171,3 @@ C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\r
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.pdb
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.genruntimeconfig.cache
 C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\ref\EFTEST.dll
-C:\Users\nithi\OneDrive\Desktop\EntityFreamwork\EFTEST\EFTEST\obj\Debug\net8.0\EFTEST.sourcelink.json

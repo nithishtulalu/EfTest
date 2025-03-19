@@ -51,6 +51,25 @@ namespace EFTEST.Controllers
 
         }
 
+        [HttpPut]
+        [Route("update Single  Data")]
+        public async Task<ActionResult> UpdateSingleDataAsync(int id, Book book)
+        {
+            await _bookServices.UpdateSingleDataAsync(id, book);
+            return Ok(new { message = $"{id} Updated successfully " });
+        }
+
+
+
+        [HttpPut]
+        [Route("update Multiple   Data")]
+        public async Task<ActionResult> UpdateMultipleDataAsync(List<int> ids)
+        {
+            await _bookServices.UpdateMultipleDataAsync(ids);
+            return Ok(new { message = $"{ids} Updated successfully " });
+
+        }
+
 
 
 

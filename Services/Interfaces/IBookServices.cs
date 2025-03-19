@@ -10,5 +10,10 @@ namespace EFTEST.Services.Interfaces
         Task DeleteMultipleBooksAsync(List<int> bookIds);
 
         Task DeleteSingleDataAsync(int id, Book book);
+
+
+        Task UpdateSingleDataAsync(int id, Book book);
+
+        Task UpdateMultipleDataAsync(List<int> ids);
     }
 }

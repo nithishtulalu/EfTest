@@ -29,5 +29,11 @@ namespace EFTEST.Services.Implementations
         {
             await _bookRepository.DeleteSingleDataAsync(id, book);
         }
+
+        public async Task UpdateSingleDataAsync(int id, Book book)=>
+            await _bookRepository.UpdateSingleDataAsync(id, book);
+
+        public async Task UpdateMultipleDataAsync(List<int> ids)=>
+            await _bookRepository.UpdateMultipleDataAsync(ids);
     }
 }
