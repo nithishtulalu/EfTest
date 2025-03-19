@@ -21,8 +21,21 @@ namespace EFTEST.Controllers
         public async Task<ActionResult> InsertData([FromBody] Book books)
         {
             await _bookServices.insertDataAsync(books);
-            return CreatedAtAction(nameof(InsertData), new { id = books.Id }, books); 
+            return CreatedAtAction(nameof(InsertData), new { id = books.Id }, books);
         }
+        [HttpPost]
+        [Route("insert-bulk-data")] // Fixed route name
+        public async Task<ActionResult> InsertManyDataAsync(List<Book> books)
+        {
+            await _bookServices.insertManyAsync(books);
+
+            return Ok(new { message = "Bulk data inserted successfully." }); // No need for CreatedAtAction
+        }
+
+
+
+
+
 
     }
 }

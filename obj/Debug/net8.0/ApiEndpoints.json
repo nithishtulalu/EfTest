@@ -21,6 +21,22 @@
   },
   {
     "ContainingType": "EFTEST.Controllers.BooksController",
+    "Method": "InsertManyDataAsync",
+    "RelativePath": "api/Books/insert-bulk-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "books",
+        "Type": "System.Collections.Generic.List\u00601[[EFTEST.Data.Book, EFTEST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFTEST.Controllers.BooksController",
     "Method": "InsertData",
     "RelativePath": "api/Books/InsertDataToBooks",
     "HttpMethod": "POST",

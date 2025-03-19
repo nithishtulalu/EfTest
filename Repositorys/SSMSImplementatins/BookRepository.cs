@@ -19,7 +19,14 @@ namespace EFTEST.Repositorys.SSMSImplementatins
                 throw new Exception("Invalid LanguageId: Language does not exist.");
             }
 
-            await _dbContext.Books.AddAsync(books); 
+            await _dbContext.Books.AddAsync(books);
+            await _dbContext.SaveChangesAsync();
+
+        }
+
+        public async Task  insertManyAsync(List<Book> books)
+        {
+           await _dbContext.Books.AddRangeAsync(books);
             await _dbContext.SaveChangesAsync();
 
         }

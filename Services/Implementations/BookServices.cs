@@ -16,5 +16,9 @@ namespace EFTEST.Services.Implementations
         {
             await _bookRepository.insertDataAsync(books);
         }
+        public async Task insertManyAsync(List<Book> books)
+        {
+            await _bookRepository.insertManyAsync(books);
+        }
     }
 }
