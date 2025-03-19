@@ -16,7 +16,11 @@ builder.Services.AddScoped<ILanguageRepository ,LanguagesRepository>();
 builder.Services.AddScoped<ILanuageServices, LanguageServices>();
 
 builder.Services.AddScoped<IJoinRepository ,JoinRepository>();
-builder.Services.AddScoped<IJoinServise,JoinServises>();
+builder.Services.AddScoped<IJoinServise, JoinServises>();
+
+
+builder.Services.AddScoped<IBookRepository ,BookRepository>();
+builder.Services.AddScoped<IBookServices, BookServices>();
 
 // Add services to the container.
 

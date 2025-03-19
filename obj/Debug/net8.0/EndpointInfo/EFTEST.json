@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Books/Insert Data To Books": {
+      "post": {
+        "tags": [
+          "Books"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Curency/ALL CUREENCY": {
       "get": {
         "tags": [
@@ -392,11 +423,7 @@
             "nullable": true
           },
           "books": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Book"
-            },
-            "nullable": true
+            "$ref": "#/components/schemas/Book"
           }
         },
         "additionalProperties": false

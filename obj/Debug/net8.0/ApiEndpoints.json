@@ -20,6 +20,22 @@
     ]
   },
   {
+    "ContainingType": "EFTEST.Controllers.BooksController",
+    "Method": "InsertData",
+    "RelativePath": "api/Books/Insert Data To Books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "books",
+        "Type": "EFTEST.Data.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EFTEST.Controllers.CurencyController",
     "Method": "GetCurrencies",
     "RelativePath": "api/Curency/ALL CUREENCY",
