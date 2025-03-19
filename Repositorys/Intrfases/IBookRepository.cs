@@ -7,5 +7,10 @@ namespace EFTEST.Repositorys.Intrfases
         Task insertDataAsync(Book books);
 
         Task insertManyAsync(List<Book> books);
+
+        Task DeleteMultipleBooksAsync(List<int> bookIds);
+        Task DeleteSingleDataAsync(int id, Book book);
+
+
     }
 }

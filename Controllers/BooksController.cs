@@ -24,12 +24,31 @@ namespace EFTEST.Controllers
             return CreatedAtAction(nameof(InsertData), new { id = books.Id }, books);
         }
         [HttpPost]
-        [Route("insert-bulk-data")] // Fixed route name
+        [Route("insert-bulk-data")]
         public async Task<ActionResult> InsertManyDataAsync(List<Book> books)
         {
             await _bookServices.insertManyAsync(books);
 
-            return Ok(new { message = "Bulk data inserted successfully." }); // No need for CreatedAtAction
+            return Ok(new { message = "Bulk data inserted successfully." });
+        }
+
+        [HttpDelete]
+        [Route("Delete Multiple based on id")]
+        public async Task<ActionResult> DeleteMultipleBooksAsync(List<int> bookIds)
+        {
+            await _bookServices.DeleteMultipleBooksAsync(bookIds);
+            return Ok(new { message = $"{bookIds}Deleted successfully" });
+
+        }
+
+        [HttpDelete]
+        [Route("Delete Single Data")]
+        public async Task<ActionResult> DeleteSingleDataAsync(int id, Book book)
+        {
+            await _bookServices.DeleteSingleDataAsync(id, book);
+            return Ok(new { message = $"{id} Deleted successfully " });
+
+
         }
 
 

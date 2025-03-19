@@ -6,5 +6,9 @@ namespace EFTEST.Services.Interfaces
     {
         Task insertDataAsync(Book books);
         Task insertManyAsync(List<Book> books);
+
+        Task DeleteMultipleBooksAsync(List<int> bookIds);
+
+        Task DeleteSingleDataAsync(int id, Book book);
     }
 }

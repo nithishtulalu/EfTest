@@ -4,7 +4,7 @@ using EFTEST.Services.Interfaces;
 
 namespace EFTEST.Services.Implementations
 {
-    public class BookServices:IBookServices
+    public class BookServices : IBookServices
     {
         private readonly IBookRepository _bookRepository;
         public BookServices(IBookRepository bookRepository)
@@ -19,6 +19,15 @@ namespace EFTEST.Services.Implementations
         public async Task insertManyAsync(List<Book> books)
         {
             await _bookRepository.insertManyAsync(books);
+        }
+
+        public async Task DeleteMultipleBooksAsync(List<int> bookIds)
+        {
+            await _bookRepository.DeleteMultipleBooksAsync(bookIds);
+        }
+        public async Task DeleteSingleDataAsync(int id, Book book)
+        {
+            await _bookRepository.DeleteSingleDataAsync(id, book);
         }
     }
 }
