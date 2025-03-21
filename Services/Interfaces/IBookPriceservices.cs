@@ -10,4 +10,4 @@ namespace EFTEST.Services.Interfaces
         Task updateBookPricesAsync(int id, BookPrice price);
     }
 }
-}
+
