@@ -53,22 +53,23 @@ namespace EFTEST.Controllers
 
         [HttpPut]
         [Route("update Single  Data")]
-        public async Task<ActionResult> UpdateSingleDataAsync(int id, Book book)
+        public async Task<ActionResult<bool>> UpdateSingleDataAsync(int id, Book book)
         {
             await _bookServices.UpdateSingleDataAsync(id, book);
             return Ok(new { message = $"{id} Updated successfully " });
         }
 
 
-
-        [HttpPut]
-        [Route("update Multiple   Data")]
-        public async Task<ActionResult> UpdateMultipleDataAsync(List<int> ids)
+        [HttpGet]
+        [Route("getting all Data")]
+        public async Task<ActionResult> GetAll()
         {
-            await _bookServices.UpdateMultipleDataAsync(ids);
-            return Ok(new { message = $"{ids} Updated successfully " });
-
+             var  execdata= await _bookServices.GetAllAsync();
+            return Ok(execdata);
         }
+
+
+
 
 
 

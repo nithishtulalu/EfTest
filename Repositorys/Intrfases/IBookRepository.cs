@@ -10,9 +10,10 @@ namespace EFTEST.Repositorys.Intrfases
 
         Task DeleteMultipleBooksAsync(List<int> bookIds);
         Task DeleteSingleDataAsync(int id, Book book);
-        Task UpdateSingleDataAsync(int id, Book book);
+        Task UpdateSingleDataAsync(int id, Book model);
 
-        Task UpdateMultipleDataAsync(List<int> ids);
+        Task<List<Book>> GetAllAsync();
+
 
 
 

@@ -13,7 +13,8 @@ namespace EFTEST.Services.Interfaces
 
 
         Task UpdateSingleDataAsync(int id, Book book);
+        Task<List<Book>> GetAllAsync();
 
-        Task UpdateMultipleDataAsync(List<int> ids);
+
     }
 }

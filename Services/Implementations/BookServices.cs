@@ -33,7 +33,8 @@ namespace EFTEST.Services.Implementations
         public async Task UpdateSingleDataAsync(int id, Book book)=>
             await _bookRepository.UpdateSingleDataAsync(id, book);
 
-        public async Task UpdateMultipleDataAsync(List<int> ids)=>
-            await _bookRepository.UpdateMultipleDataAsync(ids);
+      public async  Task<List<Book>> GetAllAsync()=>
+            await _bookRepository.GetAllAsync();    
+
     }
 }

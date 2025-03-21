@@ -57,30 +57,33 @@ namespace EFTEST.Repositorys.SSMSImplementatins
 
         }
 
-        public async Task UpdateSingleDataAsync(int id, Book book)
+        public async Task UpdateSingleDataAsync(int id, Book model)
         {
-            var book_data = await _dbContext.Books
-                                            .Where(b => b.Id == id)
-                                            .FirstOrDefaultAsync();
-            if (book_data != null)
+            var existing= await _dbContext.Books.FindAsync(id);
+            if (existing != null)
             {
-                _dbContext.Books.Update(book_data);
-                await _dbContext.SaveChangesAsync();
+                existing.Id = id;
+                existing.Title = model.Title;
+                existing.Description = model.Description;
+                existing.NoOfPages = model.NoOfPages;
+                existing.CreatedOn = model.CreatedOn;
+                existing.LanguageId = model.LanguageId;
+
+
             }
+            _dbContext.Books.Update(model);
+            await _dbContext.SaveChangesAsync();
+            
         }
 
-        public async Task UpdateMultipleDataAsync(List<int> ids)
+        public async Task<List<Book>> GetAllAsync()
         {
-            var Data_book = await _dbContext.Books
-                                            .Where(b => ids.Contains(b.Id))
-                                            .ToListAsync();
-            if (!Data_book.Any())
-            {
-                _dbContext.Books.UpdateRange(Data_book);
-                await _dbContext.SaveChangesAsync();
-            }
-
-
+            var data= await _dbContext.Books.ToListAsync();
+            return data;
         }
+
+
+
+
     }
 }
